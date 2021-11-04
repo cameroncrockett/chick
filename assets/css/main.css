@@ -111,7 +111,7 @@ section {
 }
 
 body {
-  line-height: 1;
+  line-height: 0px;
 }
 
 ol,
@@ -3645,10 +3645,18 @@ body.is-preload #banner p {
 /* Picture */
 
 .picture {
-  position: relative;
-  top: -26em;
-  left: 47em;
-  margin-bottom: -23em;
+  max-width: 25vw;
+  max-height: 60vh;
+  margin-left: 55vw;
+  margin-top: -27em;
+  margin-bottom: 6em;
+}
+
+.picture img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 /* Arrow */
@@ -3657,6 +3665,7 @@ body.is-preload #banner p {
   position: relative;
   left: 49vw;
   bottom: -2em;
+  max-width: 50vw;
 }
 
 /* Wrapper */
